@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PokéCRDS - Compra i venda de cartes Pokémon rares. Explora el nostre catàleg i uneix-te a la comunitat de col·leccionistes.">
+    <meta name="keywords" content="Cartes Pokémon rares, Comprar cartes Pokémon, Vendre cartes Pokémon">
+    <title>PokéCRDS - Inici</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-poke-bg font-poppins text-poke-text">
+    <header class="bg-gradient-to-r from-poke-blue to-poke-yellow text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold flex items-center">
+                <span class="pokeball mr-2"></span>PokéCRDS
+            </h1>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:text-poke-red transition-colors">Inici</a>
+                <a href="catalog.html" class="hover:text-poke-red transition-colors">Catàleg</a>
+                <a href="cart.html" class="hover:text-poke-red transition-colors">Carret</a>
+                <a href="contact.html" class="hover:text-poke-red transition-colors">Contacte</a>
+                <a href="sell.html" class="hover:text-poke-red transition-colors">Vendre Cartes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 flex-grow">
+        <section id="carousel" class="mb-8">
+            <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <div id="carouselItems" class="flex transition-transform duration-500">
+                    <div class="carousel-item flex-shrink-0 w-full">
+                        <img src="https://images.pokemontcg.io/xy1/1_hires.png" alt="Carta Pokémon destacada" class="w-full h-48 object-contain" loading="lazy">
+                        <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-1 w-full">
+                            <h3 class="text-lg font-bold">Carta Destacada: Venusaur</h3>
+                            <p class="text-xs">Descobreix cartes rares al nostre catàleg!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item flex-shrink-0 w-full">
+                        <img src="https://images.pokemontcg.io/sm1/1_hires.png" alt="Torneig Pokémon" class="w-full h-48 object-contain" loading="lazy">
+                        <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-1 w-full">
+                            <h3 class="text-lg font-bold">Torneigs Presencials</h3>
+                            <p class="text-xs">Uneix-te als nostres esdeveniments Pokémon!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item flex-shrink-0 w-full">
+                        <img src="https://images.pokemontcg.io/bw1/1_hires.png" alt="Vendre cartes" class="w-full h-48 object-contain" loading="lazy">
+                        <div class="absolute bottom-0 bg-black bg-opacity-50 text-white p-1 w-full">
+                            <h3 class="text-lg font-bold">Vendre les Teves Cartes</h3>
+                            <p class="text-xs">Ofereix-nos les teves cartes rares avui!</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="prevBtn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-poke-red text-white p-2 rounded-full hover:bg-opacity-80">❮</button>
+                <button id="nextBtn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-poke-red text-white p-2 rounded-full hover:bg-opacity-80">❯</button>
+            </div>
+        </section>
+
+        <section id="home" class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold mb-4 text-poke-blue">Benvinguts a PokéCRDS</h2>
+            <p class="text-lg">La teva botiga de confiança per comprar i vendre cartes Pokémon. Explora el nostre catàleg i participa en els nostres torneigs!</p>
+        </section>
+
+        <section id="tournaments" class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-poke-blue">Torneigs Presencials</h2>
+            <p>Uneix-te als nostres torneigs de Pokémon! Consulta els pròxims esdeveniments a la nostra web.</p>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-poke-blue to-poke-yellow text-white p-4 text-center">
+        <p>© 2025 PokéCRDS. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93bad84f8d25397f',t:'MTc0NjU1OTMzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

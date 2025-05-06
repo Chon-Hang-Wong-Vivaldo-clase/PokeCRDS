@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vendeix les teves cartes Pokémon a PokéCRDS. Omple el formulari per oferir les teves cartes.">
+    <meta name="keywords" content="Vendre cartes Pokémon, PokéCRDS">
+    <title>PokéCRDS - Vendre Cartes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-poke-bg font-poppins text-poke-text">
+    <header class="bg-gradient-to-r from-poke-blue to-poke-yellow text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold flex items-center">
+                <span class="pokeball mr-2"></span>PokéCRDS
+            </h1>
+            <nav class="flex space-x-4">
+                <a href="index.html" class="hover:text-poke-red transition-colors">Inici</a>
+                <a href="catalog.html" class="hover:text-poke-red transition-colors">Catàleg</a>
+                <a href="cart.html" class="hover:text-poke-red transition-colors">Carret</a>
+                <a href="contact.html" class="hover:text-poke-red transition-colors">Contacte</a>
+                <a href="sell.html" class="hover:text-poke-red transition-colors">Vendre Cartes</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="sell" class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-poke-blue">Vendre les Teves Cartes</h2>
+            <p class="mb-4">Omple el formulari següent per oferir-nos les teves cartes Pokémon. Ens posarem en contacte amb tu aviat!</p>
+            <div class="max-w-md">
+                <div id="formErrors" class="mb-4"></div>
+                <div class="mb-4">
+                    <label for="cardName" class="block text-sm font-medium text-poke-text">Nom de la Carta</label>
+                    <input type="text" id="cardName" class="mt-1 p-2 w-full border border-poke-blue rounded bg-poke-bg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="cardSet" class="block text-sm font-medium text-poke-text">Edició (Set)</label>
+                    <input type="text" id="cardSet" class="mt-1 p-2 w-full border border-poke-blue rounded bg-poke-bg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="cardRarity" class="block text-sm font-medium text-poke-text">Raresa</label>
+                    <input type="text" id="cardRarity" class="mt-1 p-2 w-full border border-poke-blue rounded bg-poke-bg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="cardCondition" class="block text-sm font-medium text-poke-text">Estat</label>
+                    <select id="cardCondition" class="mt-1 p-2 w-full border border-poke-blue rounded bg-poke-bg" required>
+                        <option value="Mint">Mint</option>
+                        <option value="Near Mint">Near Mint</option>
+                        <option value="Excellent">Excellent</option>
+                        <option value="Good">Good</option>
+                        <option value="Played">Played</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="sellerEmail" class="block text-sm font-medium text-poke-text">Correu Electrònic</label>
+                    <input type="email" id="sellerEmail" class="mt-1 p-2 w-full border border-poke-blue rounded bg-poke-bg" required>
+                </div>
+                <button id="sellSubmitBtn" class="bg-poke-red text-white px-4 py-2 rounded-lg hover:bg-opacity-80 transition-colors">Enviar Oferta</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-poke-blue to-poke-yellow text-white p-4 text-center">
+        <p>© 2025 PokéCRDS. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'93bad84e19937c7e',t:'MTc0NjU1OTMzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
